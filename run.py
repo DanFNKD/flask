@@ -25,7 +25,7 @@ def about_member(member_name):
         data = json.load(json_data)
         for obj in data:
             if obj["url"] == member_name:
-            member = obj
+                member = obj
     return render_template("member.html", member=member)
 
 
